@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <select id="local">
+        
+    </select>
+
+    <ul id="lista">
+
+    </ul>
+    <script>
+    
+    const cidades=
+    [
+        {
+            id:'1',
+            cidade:'Carboneira'
+        },
+        {
+            id:'2',
+            cidade:'Ercilândia'
+        },
+        {
+            id:'3',
+            cidade:'Saltinho do Oeste'
+        },
+        {
+            id:'4',
+            cidade:'Jangada do Sul'
+        }
+
+    ]
+    
+    const local=document.getElementById('local');
+
+    cidades.map((f)=>{
+        let opcao=`<option value=${f.id}>${f.cidade}</option>`;
+        local.innerHTML +=opcao;
+    })
+    
+    const sites=[
+        {
+            titulo:'Google',
+            url:'www.google.com'
+        },
+        {
+            titulo:'GitHub',
+            url:'www.github.com'
+        },
+        {
+            titulo:'uol',
+            url:'www.uol.com.br'
+        },
+        {
+            titulo:'youtube',
+            url:'www.youtube.com'
+        }
+    ]
+    
+
+    
+    </script>
+    
+</body>
+</html>
